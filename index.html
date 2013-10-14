@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Facebook Adventure</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/fbgame.js"></script>
+		<script src="http://code.createjs.com/createjs-2013.09.25.min.js"></script>
+		<script src="js/j_spritesheetdefs.js"></script>
+		<script src="js/j_procedural.js"></script> 	
+		<script src="js/j_aux.js"></script>
+		<script src="js/j_base.js"></script>
+		<script src="js/j_combat.js"></script>
+		<script src="js/j_button.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<link rel="stylesheet" href="css/gamestyle.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Header -->
+			<div id="header" class="skel-panels-fixed">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span><img width="100px" src="images/site/Logo-FB.png" alt="" /></span>
+							<h1 id="title">Facebook Adventure</h1
+							<span class="byline"><span class="username"><a class="fblogin">Login</a></span><span class="fblogout"></span></span>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							
+							<div style="margin-right:20px"><h2>How To Play</h2>
+							<p style="font-size:22px">
+								Arrow keys to move around. &nbsp;
+								Pick up items like coffee, beer while walking, then click them while in combat for different effects. &nbsp;
+								Submit yourself to bloodshed. Kill your friends with impunity. &nbsp;
+							</p>
+							</div>
+						</nav>
+						
+				</div>
+				
+				<div class="bottom">
+
+					<!-- Social Icons 
+						<ul class="icons">
+							<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+							<li><a href="#" class="icon icon-facebook"><span>Facebook</span></a></li>
+							<li><a href="#" class="icon icon-github"><span>Github</span></a></li>
+							<li><a href="#" class="icon icon-dribbble"><span>Dribbble</span></a></li>
+							<li><a href="#" class="icon icon-envelope"><span>Email</span></a></li>
+						</ul>
+					-->
+				</div>
+			
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<!-- Intro -->
+					<section id="top" class="one">
+						<div class="container">
+
+							<a  class="image featured"><img src="images/site/Banner.jpg" alt="" /></a>
+
+							<header>
+								<h2 id="loading" class="alt"><strong>Adventure</strong> through the code behind <strong>Facebook</strong><br> and fight you're friend's evil profiles</a>.</h2>
+							</header>
+						
+
+							<footer>
+								<a href="#portfolio" class="button scrolly fblogin">Click Here To Start</a>
+							</footer>
+
+						</div>
+					</section>
+					
+				<!-- Portfolio -->
+					<section style="display:none" id="profilecreate" class="two">
+						<div class="container">
+					
+							<header>
+							</header>
+							
+							<h2>Create Your Profile</h2>
+							<p></p>
+							<div>
+								<div style="display:inline-block;width:55%;text-align:left;"> 
+									<span>Select Your Character  </span><select style="display:inline-block;" id="character_select">
+										<option value="Web Developer">Web Developer</option>
+										<option value="Database Admin">Database Admin</option>
+										<option value="Project Manager">Project Manager</option>
+									</select>
+									<div id="special_preview">Special Ability: X-Site Script Attack</div>
+									<button id="create_profile" class="button" type="button">Create Profile</button>
+								</div>
+								<div id="character_preview" style="display:inline-block;width:40%;">
+									<div style="text-align:left;width:40%;display:inline-block;">
+										<div>Agility: <span id="agivalue">99</span></div>
+										<div>Strength: <span id="strvalue">25</span></div>
+										<div>Intelligence: <span id="intvalue">50</span></div>
+									</div>
+									<div style="width:50%;display:inline-block;"><img width="40%" src="/images/site/nerd1.png"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section style="display:none" id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a href="http://ineedchemicalx.deviantart.com/art/Pasadena-357650036" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							
+							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus 
+							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae 
+							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem 
+							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper 
+							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec 
+							ornare iaculis.</p>
+
+						</div>
+					</section>
+			
+				<!-- Contact -->
+					<section style="display:none;background-color:rgb(136, 136, 136);" id="play" class="four">
+						<div class="container">
+							<div style="position: absolute;">
+							 <canvas id="testCanvas" width="616" height="416" 
+							   style="position: absolute; left: 0px; top: 0px; z-index: 1;">
+							   </canvas>
+							 <canvas id="combatCanvas" width="616" height="416" 
+							   style="position: absolute; left: 0px; top: 0px; z-index: 1;">
+							   </canvas>
+							</div>
+
+						</div>
+					</section>
+			
+			</div>
+
+		<!-- Footer -->
+			<div style="display:none" id="footer">
+				
+				<!-- Copyright -->
+					
+				
+			</div>
+
+	</body>
+</html>
